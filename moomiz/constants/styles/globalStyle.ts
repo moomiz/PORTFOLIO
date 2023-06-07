@@ -5,6 +5,8 @@ export const GlobalStyle = createGlobalStyle`
     
     html,
     body {
+    /* background-color: #F9F5EA; */
+    background-color: #99CCFF;
     font-family: Pretendard;
     padding: 0;
     margin: 0px auto;
