@@ -4,15 +4,15 @@ import first from "@/public/firstcloud.png"
 import second from "@/public/secondcloud.png"
 import Third from "@/public/Thirdcloud.png"
 import { useEffect } from "react"
-import { useRouter } from "next/router"
+
 
 export default function Home() {
 
   return (
     <Wrapper>
       <TitleContainer>
-        <Title className="Endeavoring">Endeavoring</Title>
-        <Title><Point>Front-end</Point> Developer</Title>
+        <Title className="Endeavoring">성장하는</Title>
+        <Title><Point>Front-end</Point> 개발자</Title>
       </TitleContainer>
       <ImageContainer>
         <Image
@@ -30,15 +30,13 @@ export default function Home() {
 }
 
 const Wrapper = styled.div`
-  height: 90vh;
-  font-weight: 800;
-  font-size: 128px;
+  height: 100%;
   padding-top: 7.5%;
 `
 const TitleContainer = styled.div`
   position: absolute;
-  padding-left: 20%;
- 
+  padding-left: 22%;
+  
 `
 
 const ImageContainer = styled.div`
@@ -55,9 +53,17 @@ const Title = styled.div`
    font-weight: 800;
   font-size: 128px;
   margin: 1rem;
+  font-family:RixInooAriDuriR;
+  color:#FFE78F;
+  text-shadow: 2px 2px 2px gray;
+  font-weight: normal;
+  font-style: normal;
 `
 const Point = styled.span`
   color: ${({ theme }) => theme.color.point};
+  font-family: RixInooAriDuriR;
   font-size:78px;
-  text-shadow: 2px 2px 2px gray
+  text-shadow: 2px 2px 2px gray;
+  margin-left: 2rem;
+  margin-right: 3rem;
 `

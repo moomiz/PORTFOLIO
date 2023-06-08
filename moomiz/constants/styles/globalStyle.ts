@@ -2,16 +2,14 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
-    
     html,
     body {
     /* background-color: #F9F5EA; */
+    font-family: RixInooAriDuriR,PilseungGothic,HS-,Pretendard-Regular ;
     background-color: #99CCFF;
-    font-family: Pretendard;
     padding: 0;
     margin: 0px auto;
     -webkit-text-size-adjust: none;
-    font-family: Pretendard;
     -webkit-user-select: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
