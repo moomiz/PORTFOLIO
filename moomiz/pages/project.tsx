@@ -53,7 +53,7 @@ const ImageContainer = styled.div`
 	}
 	to {
 		opacity: 0;
-    transform: translateY(-60%);
+    transform: translateY(-20%);
 	}
 }
 

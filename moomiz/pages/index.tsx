@@ -31,11 +31,13 @@ export default function Home() {
 
 const Wrapper = styled.div`
   height: 100%;
-  padding-top: 7.5%;
+
 `
 const TitleContainer = styled.div`
   position: absolute;
+  padding-top: 7.5%;
   padding-left: 22%;
+  z-index: 10;
   
 `
 
@@ -43,11 +45,24 @@ const ImageContainer = styled.div`
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
+  bottom: 20%;
   width: 100%;
   .right{
     margin-left: 60%;
   }
-
+  animation: fadein 3s;
+  animation-fill-mode: forwards;
+  @keyframes fadein {
+/* 효과를 동작시간 동안 0 ~ 1까지 */
+	from {
+		opacity: 0;
+    
+	}
+	to {
+		opacity: 1;
+    transform: translateY(20%);
+	}
+}
 `
 const Title = styled.div`
    font-weight: 800;

@@ -7,8 +7,8 @@ function Navbar() {
     <Wrapper>
       <Link href="about">about</Link>
       <Link href="skill">skill</Link>
+      <Link href="/">home</Link>
       <Link href="project">project</Link>
-      <div>velog</div>
       <div>github</div>
     </Wrapper>
   )
