@@ -4,13 +4,14 @@ import { styled } from 'styled-components';
 
 function Navbar() {
   return (
-    <Wrapper>
-      <Link href="about">about</Link>
-      <Link href="skill">skill</Link>
-      <Link href="/">home</Link>
-      <Link href="project">project</Link>
-      <div>github</div>
-    </Wrapper>
+    <></>
+    // <Wrapper>
+    //   <Link href="about">about</Link>
+    //   <Link href="skill">skill</Link>
+    //   <Link href="/">home</Link>
+    //   <Link href="project">project</Link>
+    //   <div>github</div>
+    // </Wrapper>
   )
 }
 
