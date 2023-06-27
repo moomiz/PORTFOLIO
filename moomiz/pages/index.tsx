@@ -7,6 +7,7 @@ import { useEffect } from "react"
 import LogoComponent from "@/components/Main/LogoComponent"
 import TitleComponent from "@/components/Main/TitleComponent"
 import About from "./about"
+import PhoneComponent from "@/components/about/PhoneComponent"
 
 export default function Home() {
 

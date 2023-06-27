@@ -7,7 +7,8 @@ import PuppyFaceTwo from '@/public/face2.png';
 import YellowFlower from '@/public/yellowflower.png';
 
 import ProfileComponent from '@/components/about/ProfileComponent';
-
+import SkillComponent from '@/components/about/skills/SkillComponent';
+import PhoneComponent from '@/components/about/PhoneComponent';
 
 function about() {
   return (
@@ -41,7 +42,8 @@ function about() {
       <MainContainer>
         <ProfileComponent />
       </MainContainer>
-
+        <SkillComponent />
+        <PhoneComponent />
     </Wrapper>
   )
 }
