@@ -24,7 +24,7 @@ padding: 1rem;
 color: ${({theme})=> theme.color.point};
 font-weight: 700;
 font-size: 18px;
-text-shadow: 2px 2px 2px gray
+text-shadow: 2px 2px 2px gray;
 `
 
 

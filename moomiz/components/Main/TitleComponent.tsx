@@ -40,6 +40,7 @@ function TitleComponent() {
 }
 
 const Wrapper = styled.div`
+    scroll-snap-align: start;
     display: flex;
     justify-content: center;
     align-items: center;

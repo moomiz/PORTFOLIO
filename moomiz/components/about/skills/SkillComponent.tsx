@@ -1,4 +1,4 @@
-import React,{use, useState} from 'react';
+import React,{use, useEffect, useState} from 'react';
 import { styled } from 'styled-components';
 import Image from 'next/image';
 
@@ -12,7 +12,7 @@ import SkillButton from '@/components/about/skills/SkillButton'
 
 
 function SkillComponent() {
-
+    
     return (
         <Wrapper>
             <SkillTitle>skills</SkillTitle>
@@ -35,6 +35,8 @@ const Wrapper = styled.div`
     padding-top: 2rem;
     display: flex;
     flex-direction: column;
+    perspective: -400px;
+    transform: translate3d(0px, 0px, -200px);
 `
 const SkillTitle = styled.div`
     padding-left: 1rem;

@@ -43,7 +43,6 @@ function about() {
         <ProfileComponent />
       </MainContainer>
         <SkillComponent />
-        <PhoneComponent />
     </Wrapper>
   )
 }
