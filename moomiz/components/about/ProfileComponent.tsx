@@ -1,33 +1,24 @@
 import React from 'react'
 import { styled } from "styled-components";
 import Image from "next/image";
-
-import Profile from '@/public/profile.png';
+import Profile1 from '@/public/profile1.jpg'
+import MyPhoto from '@/public/MyPhoto.jpg'
 function ProfileComponent() {
     return (
         <MainContainer>
             <ProfileContainer>
                 <Image
-                    src={Profile}
-                    alt="Profile"
-                    width={240}
-                    height={250}
+                    src={MyPhoto}
+                    alt='profile'
+                    width={300}
+                    height={300}
                 />
-                <DescriptList>
-
-                    <DescriptionDiv>김민지</DescriptionDiv>
-                    <DescriptionDiv>1998.04.09</DescriptionDiv>
-                    <DescriptionDiv>010-8964-8573</DescriptionDiv>
-                </DescriptList>
             </ProfileContainer>
             <IntroduceContainer>
-                Hello🖐️
                 <IntroduceUl>
-                    <li>"책임감"과 "열정"을 가지고 있습니다.</li>
-                    <li>클린 코드를 작성하기 위해 노력합니다.</li>
-                    <li>사용자 친화적인 UX/UI를 고려하여 개발하기 위해 노력합니다.</li>
-                    <li>피드백을 적극적으로 수용하여 빠르게 문제를 해결하기 위해 노력합니다.</li>
-                    <li>효율적인 코드를 짜기 위해 주 3회 이상 알고리즘 문제를 풀고 있습니다.</li>
+                    <li>"사용자의 경험을 중시하기 위해"</li>
+                    <li>"함께 일하고 싶은 동료가 되기 위해"</li>
+                    <li>"더 나은 개발자가 되기 위해"</li>
                 </IntroduceUl>
             </IntroduceContainer>
 
@@ -36,15 +27,20 @@ function ProfileComponent() {
 }
 
 const MainContainer = styled.div`
+    background-color: black;
+    color:white;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    font-family: Pretendard-Regular;
+    font-weight: 600;
 `
 const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 `
 const DescriptList = styled.div`
@@ -66,7 +62,8 @@ width: 50%;
 const IntroduceUl = styled.ul`
     display: flex;
   flex-direction: column;
-  justify-content: space-between;  
+  justify-content: space-around; 
+  align-items : center;
   height: 100%;
 `
 

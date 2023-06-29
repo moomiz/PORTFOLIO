@@ -11,9 +11,8 @@ function ModelComponent() {
 }
 
 const Wrapper = styled.div`
-    width: 1600px;
-    height: 906px;
-    overflow: hidden;
+  display: flex;
+  padding-top: 5%;
 `
 
 export default ModelComponent

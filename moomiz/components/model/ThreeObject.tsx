@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import * as THREE from "three";
 import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { styled } from 'styled-components';
 
 function ThreeObject() {
     const sceneRef = useRef<HTMLDivElement>(null);
@@ -69,8 +70,12 @@ function ThreeObject() {
         };
     }, []);
 
-    return <div ref={sceneRef} />;
+    return <Model ref={sceneRef} />;
 };
 
+const Model = styled.div`
+    width: 50%;
+    height: 50%;
+`
 
 export default ThreeObject
