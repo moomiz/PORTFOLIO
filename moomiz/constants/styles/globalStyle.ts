@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
     *,
     *:before,
     *:after {
-    font-family: Pretendard;
+    font-family: Pretendard-Regular;
     box-sizing: border-box;
     }
     :focus {
@@ -53,6 +53,8 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         border: none;
         cursor: pointer;
+        font-family: Pretendard-Regular;
+        font-weight: 600;
     }
 `;
 
