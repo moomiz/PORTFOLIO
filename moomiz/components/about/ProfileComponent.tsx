@@ -27,8 +27,6 @@ function ProfileComponent() {
 }
 
 const MainContainer = styled.div`
-    background-color: black;
-    color:white;
     width: 100vw;
     height: 100vh;
     display: flex;

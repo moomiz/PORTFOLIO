@@ -50,7 +50,6 @@ function ProjectComponent() {
 const Wrapper = styled.div`
   height: 100%;
   width: 100%;
-  color:white;
   display: flex;
   flex-direction: column;
   justify-content: center;

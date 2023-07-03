@@ -14,7 +14,6 @@ function project() {
 }
 
 const Wrapper = styled.div`
-  background-color: black;
   height: 100%;
   font-weight: 800;
   font-size: 128px;

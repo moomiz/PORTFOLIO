@@ -1,12 +1,10 @@
 import React from 'react';
 import { styled } from "styled-components";
-import IntroComponent from '@/components/about/IntroComponent';
 import ProfileComponent from '@/components/about/ProfileComponent';
 
 function about() {
   return (
     <Wrapper>
-      <IntroComponent />
       <ProfileComponent />
     </Wrapper>
   )

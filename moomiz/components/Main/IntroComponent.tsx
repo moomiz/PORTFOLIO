@@ -6,7 +6,7 @@ import Profile3 from '@/public/profile3.jpg'
 import { styled } from 'styled-components';
 
 function IntroComponent() {
-    const texts = ['안','녕','하','세','요',' ','신','입',' ','F','R','O','N','T','-','E','N','D',' ','김',
+    const texts = ['안','녕','하','세','요',' ','신','입',' ','F','R','O','N','T','-','E','N','D',' ','개','발','자',' ','김',
     '민','지','입','니','다']
     return (
         <Wrapper>

@@ -14,7 +14,6 @@ function Navbar() {
     <div>
       <Wrapper>
         <Btn pathName={pathName} now={'/about'} className='/about'><Link href="/about">about</Link></Btn>
-        <Btn pathName={pathName} now={'/skill'} className='/skill'><Link href="/skill">skill</Link></Btn>
         <Btn pathName={pathName} now={"/project"}><Link href="/project">project</Link></Btn>
       </Wrapper>
     </div>
@@ -28,10 +27,10 @@ flex-direction: row;
 width: 100%;
 justify-content: space-around;
 padding: 1rem;
-color: white;
+/* color: white; */
 font-weight: 700;
 font-size: 18px;
-mix-blend-mode: difference;
+/* mix-blend-mode: difference; */
 `
 const Btn = styled.div<{pathName:string, now:string}>`
     border:1px solid ${(props)=>props.pathName ===props.now? "white":"transparent" };
