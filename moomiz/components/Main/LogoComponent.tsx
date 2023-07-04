@@ -7,7 +7,11 @@ import Third from "@/public/Thirdcloud.png"
 import ProfileComponent from '@/components/about/ProfileComponent'
 import ThreeObject from '../model/ThreeObject'
 import flower from "@/public/flower.png"
-import flowerBlack from "@/public/flowerBlack.png"
+import flowerBlack from "@/public/flowerBlack.png";
+import heart from "@/public/heart.png"
+import star from "@/public/star.png"
+import cloud from "@/public/cloud.png"
+import clover from "@/public/clover.png"
 import Link from 'next/link'
 
 function LogoComponent() {
@@ -16,7 +20,33 @@ function LogoComponent() {
       <TitleContainer>
         <Title className="Endeavoring">김민지의 포트폴리오</Title>
       </TitleContainer>
-      <Flower className='flower'>
+      <ImagePosition>
+      <Image
+      src={heart}
+      alt='하트'
+      width={120}
+      height={117}
+       />
+       <Image
+      src={star}
+      alt='별'
+      width={120}
+      height={117}
+       />
+       <Image
+      src={cloud}
+      alt='구름'
+      width={120}
+      height={117}
+       />
+       <Image
+      src={clover}
+      alt='클로버'
+      width={120}
+      height={117}
+       />
+      </ImagePosition>
+      {/* <Flower className='flower'>
         <Image
           src={flowerBlack}
           alt='flower1'
@@ -48,7 +78,7 @@ function LogoComponent() {
           height={150
           }
         />
-      </Flower>
+      </Flower> */}
     </Wrapper>
   )
 }
@@ -128,6 +158,11 @@ const Point = styled.span`
   text-shadow: 2px 2px 2px gray;
   /* margin-left: 2rem; */
   margin-right: 3rem;
+`
+
+const ImagePosition = styled.div`
+
+  
 `
 
 
