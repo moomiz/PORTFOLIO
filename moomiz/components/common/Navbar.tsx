@@ -24,9 +24,10 @@ const Wrapper = styled.div`
 position: fixed;
 display: flex;
 flex-direction: row;
-width: 100%;
-justify-content: space-around;
+width: 95%;
+justify-content: end;
 padding: 1rem;
+padding-bottom: 0rem;
 /* color: white; */
 font-weight: 700;
 font-size: 18px;
@@ -36,6 +37,7 @@ const Btn = styled.div<{pathName:string, now:string}>`
     border:1px solid ${(props)=>props.pathName ===props.now? "white":"transparent" };
     mix-blend-mode: difference;
     padding: 0.5rem;
-    border-radius: 5px;
+    margin-left: 2rem;
+
 `
 export default Navbar;

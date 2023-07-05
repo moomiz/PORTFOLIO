@@ -17,35 +17,38 @@ import Link from 'next/link'
 function LogoComponent() {
   return (
     <Wrapper>
-      <TitleContainer>
-        <Title className="Endeavoring">김민지의 포트폴리오</Title>
-      </TitleContainer>
-      <ImagePosition>
       <Image
-      src={heart}
-      alt='하트'
-      width={120}
-      height={117}
-       />
-       <Image
-      src={star}
-      alt='별'
-      width={120}
-      height={117}
-       />
-       <Image
-      src={cloud}
-      alt='구름'
-      width={120}
-      height={117}
-       />
-       <Image
-      src={clover}
-      alt='클로버'
-      width={120}
-      height={117}
-       />
-      </ImagePosition>
+      className='heart'
+        src={heart}
+        alt='하트'
+        width={240}
+        height={234}
+      />
+      <Image
+      className='star'
+        src={star}
+        alt='별'
+        width={120}
+        height={117}
+      />
+      <TitleContainer>
+        <Title className="Endeavoring">민지's 포트폴리오</Title>
+      </TitleContainer>
+
+      <Image
+      className='cloud'
+        src={cloud}
+        alt='구름'
+        width={240}
+        height={234}
+      />
+      <Image
+      className='clover'
+        src={clover}
+        alt='클로버'
+        width={240}
+        height={234}
+      />
       {/* <Flower className='flower'>
         <Image
           src={flowerBlack}
@@ -90,6 +93,45 @@ const Wrapper = styled.div`
   justify-content:space-evenly;
   align-items: center;
   flex-direction: column;
+
+
+  img{
+    
+    
+      /* animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+      animation-iteration-count: 4; */
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  .heart {
+    animation: bounce_frames 1.4s infinite;
+    animation-direction: alternate;
+    top: 20%;
+    left: 10%;
+  }
+  .star{
+    animation: bounce_frames 1.2s infinite;
+    animation-direction: alternate;
+    top: 50%;
+    left: 75%;
+  }
+  .clover{
+    animation: bounce_frames 1s infinite;
+    animation-direction: alternate;
+    top:65%;
+    left: 32%;
+  }
+  .cloud {
+    animation: bounce_frames 1.6s infinite;
+    animation-direction: alternate;
+    top:10%;
+    left: 50%;
+  }
+  @keyframes bounce_frames {
+      from {transform: translate3d(0, 0, 0);}
+      to {transform: translate3d(0, 50px, 0);}
+    }
 
   `
 const TitleContainer = styled.div`
@@ -160,68 +202,65 @@ const Point = styled.span`
   margin-right: 3rem;
 `
 
-const ImagePosition = styled.div`
-
-  
-`
 
 
-const Flower = styled.div`
-  width:300px;
-  height: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 10;
-  animation: rotate_image 15s linear infinite;transform-origin: 50% 50%;
-  
-  &:hover{
-    animation-play-state: paused;
-  }
-  .flower1:hover{
-    animation: fadeout 1s;
-    animation-fill-mode: forwards;
-  
-  }
 
-  
+// const Flower = styled.div`
+//   width:300px;
+//   height: 300px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   z-index: 10;
+//   animation: rotate_image 15s linear infinite;transform-origin: 50% 50%;
 
-  .flower2 {
-    transform: scaleX(-1);
-  }
-  .flower2:hover{
-    animation: fadeout 1s;
-    animation-fill-mode: forwards;
-  }
-  .flower3 {
-    transform: scaleY(-1);
-  }
+//   &:hover{
+//     animation-play-state: paused;
+//   }
+//   .flower1:hover{
+//     animation: fadeout 1s;
+//     animation-fill-mode: forwards;
 
-  .flower3:hover{
-    animation: fadeout 1s;
-    animation-fill-mode: forwards;
-  }
+//   }
 
-  .flower4:hover{
-    animation: fadeout 1s;
-    animation-fill-mode: forwards;
-  }
 
-  @keyframes fadeout {
-    0%{
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-  }
-  }
-  @keyframes rotate_image{
-    100% {
-        transform: rotate(360deg);
-    }
-  }
-`
-const Petal = styled.div`
 
-`
+//   .flower2 {
+//     transform: scaleX(-1);
+//   }
+//   .flower2:hover{
+//     animation: fadeout 1s;
+//     animation-fill-mode: forwards;
+//   }
+//   .flower3 {
+//     transform: scaleY(-1);
+//   }
+
+//   .flower3:hover{
+//     animation: fadeout 1s;
+//     animation-fill-mode: forwards;
+//   }
+
+//   .flower4:hover{
+//     animation: fadeout 1s;
+//     animation-fill-mode: forwards;
+//   }
+
+//   @keyframes fadeout {
+//     0%{
+//       opacity: 1;
+//     }
+//     100% {
+//       opacity: 0;
+//   }
+//   }
+//   @keyframes rotate_image{
+//     100% {
+//         transform: rotate(360deg);
+//     }
+//   }
+// `
+// const Petal = styled.div`
+
+// `
 
 export default LogoComponent

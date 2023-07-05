@@ -39,7 +39,7 @@ function ProjectComponent() {
   return (
     <Wrapper>
       <TextBox>
-        <p>
+        <TextLine>
           사용자의 경험<TextImage>
             <Image
               src={user_bubble}
@@ -48,8 +48,8 @@ function ProjectComponent() {
               height={100}
             />
           </TextImage>을 중시하며
-        </p>
-        <p>기획<TextImage>
+        </TextLine>
+        <TextLine>기획<TextImage>
           <Image
             src={think}
             alt='기획'
@@ -74,12 +74,8 @@ function ProjectComponent() {
               height={100}
             />
           </TextImage>
-        </p>
-        <p>
-
-          모두 참여한 프로젝트 입니다.
-        </p>
-
+        </TextLine>
+        <TextLine>모두 참여한 프로젝트 입니다.</TextLine>
       </TextBox>
       <Title>Project</Title>
       <ProjectList>
@@ -114,6 +110,7 @@ const Title = styled.div`
   padding:1rem;
 `
 const TextBox = styled.div`
+height: 100%;
 font-size: 60px;
 margin-left: 10%;
 margin-right: 10%;
@@ -121,6 +118,7 @@ text-align: center;
 display: flex;
 flex-direction: column;
 align-items: start;
+justify-content: space-between;
 ${({ theme }) => theme.devices.tablet}{
   font-size: 30px;
 }
@@ -129,6 +127,11 @@ ${({ theme }) => theme.devices.mobile}{
   font-size: 20px;
 }
 `
+const TextLine = styled.div`
+
+
+`
+
 const ProjectList = styled.div`
     width: 100%;
     display: flex;
